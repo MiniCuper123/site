@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>if mstuca</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+<div id="logo" onclick="slowScroll('#top')">
+  <span>ИФ МГТУ ГА</span>
+</div>
+<div id="about">
+<a href="#" title="Возможности"onclick="slowScroll('#main')">Возможности</a>
+<a href="#" onclick="slowScroll('#overiew')" title="Преимущества">Преимущества</a>
+<a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+</div>
+</header>
+
+<div id="top">
+  <h1>Учиться</h1>
+  <h3>Значит жить!</h3>
+</div>
+
+<div id="main">
+  <div class="keks">
+  <div class="intro">
+    <p>Приветствую Вас на официальном сайте Иркутского филиала МГТУ ГА!</p>
+    <span>Настоящая Стратегия разработана в соответствии со Стратегией
+инновационного развития Российской Федерации на период до 2020 года,
+утвержденной распоряжением Правительства Российской Федерации от 8 декабря
+2011 года № 2227-р, которая определила развитие образования, фундаментальной
+и прикладной наук одними из приоритетных направлений по обеспечению
+государственной безопасности; Государственной программой Российской Федерации
+«Развитие науки и технологий»</span>
+  </div>
+  <div class="text">
+    <p>Приветствую Вас на официальном сайте Иркутского филиала МГТУ ГА!</p>
+    <span>Федеральное государственное бюджетное образовательное учреждение высшего образования «Московский государственный технический университет гражданской авиации» (МГТУ ГА). Сокращенное наименование: МГТУ ГА</span>
+    </div>
+  </div>
+</div>
+
+<div id="overiew">
+  <h2>Преимущества</h2>
+  <h4>Бесконечность не предел</h4>
+<div class='gang'>
+<div class="img">
+  <img src="https://dic.academic.ru/pictures/wiki/files/109/mgtu_emblema.gif" atl="">
+  <span>Красивый герб</span>
+</div>
+
+  <div class="img">
+    <img src="https://dic.academic.ru/pictures/wiki/files/109/mgtu_emblema.gif" atl="">
+    <span>Классный аэродром</span>
+  </div>
+
+  <div class="img">
+    <img src="https://dic.academic.ru/pictures/wiki/files/109/mgtu_emblema.gif" atl="">
+    <span>Классное общежитие</span>
+  </div>
+
+  <div class="img">
+    <img src="https://dic.academic.ru/pictures/wiki/files/109/mgtu_emblema.gif" atl="">
+    <span>Классная практика</span>
+   </div>
+   </div>
+  </div>
+</div>
+
+<div id="contacts">
+  <center><h5>Обратная связь</h5></center>
+  <form id="form_input" method="post">
+    <label for="name">Имя <span>*</span></label><br>
+    <input type="text" placeholder="Введите имя" name="name" id=name><br>
+    <label for="email">Ваша почта <span>*</span></label><br>
+    <input type="email" placeholder="Введите вашу почту" name="email" id=email><br>
+    <label for="message">Сообщение <span>*</span></label><br>
+    <textarea placeholder="Задайте свой вопрос" name="message" id="message"></textarea><br>
+    <button class="button" type="submit" formmethod="post" formaction="./mail.php"><span>Отправить </span></button>
+  </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  function slowScroll(id) {
+  $('html,body').animate({
+    scrollTop: $(id).offset().top
+    }, 500);
+  }
+
+  $(document).on("scroll", function() {
+    if($(window).scrollTop() === 0 )
+      $("header").removeClass("fixed");
+      else
+      $("header").attr("class","fixed");
+  });
+</script>
+<footer id="footer-site">
+  <div>
+    <ul class="widget-social">
+       <li>
+          <a href="https://vk.com/if_mstuca" class= "fab fa-vk"></a>
+       </li>
+    </ul>
+    <span>&copy; 1488</span>
+    <a href="#top">Перейти к верху страницы</a>
+  </div>
+
+</footer>
+   </body>
+</html>

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+  transition: .5s;
+}
+
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Roboto', serif;
+}
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+
+  #about {
+    float: right;
+    width: 67%;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+#about {
+  text-align: center;
+  font-size: 1.01em;
+  line-height: 40px;
+}
+
+#about >a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#about >a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+  }
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #343434;
+  }
+
+  .fixed #about a {color: #343434}
+  .fixed #about a:hover {color: #7c7c7c}
+
+#top {
+  width:100%;
+  height: 100%;
+  background-image: url(https://vuzopedia.ru/storage/app/uploads/public/5e5/bd9/ab2/5e5bd9ab2707e832092805.jpg);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+
+}
+
+#top h1 {
+  padding-top: 20%;
+}
+
+#top h3 {
+  color: #ccc;
+}
+
+#main {
+  background-color: #f6f6f6;
+  border-top: 2px solid silver;
+  color: #484848;
+  font-size: 1.3em;
+  height: auto;
+  padding-bottom: 150px;
+  padding-top: 150px;
+  width: 100%;
+}
+
+@media (min-width: 1401px) {
+  #main {
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .intro p {
+  font-size:30px;
+  font-weight: 100;
+  padding-bottom: 15px;
+  }
+  .text p {
+    font-size:30px;
+  font-weight: 100;
+  padding-bottom: 15px;
+  }
+}
+#main span {
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  #main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+#main div {
+    width: 100%;
+  }
+}
+
+#main .keks {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.intro{
+  width: 500px;
+  display: flex;
+  flex-flow: column;
+}
+.text{
+  width: 60%;
+  display: flex;
+  flex-flow: column;
+}
+
+#main h2 {font-size: 2em}
+#main span {color: #a0a0a0}
+
+#overiew {
+  background-image: url(http://www.aex.ru/images/media/900/19309.jpg);
+  background-blend-mode: multiply;
+  background-color: #403f40;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+  padding-bottom: 250px;
+  }
+
+  #overiew h2 {font-size: 4em}
+  #overiew h4 {color: #ccc; font-size: 1.5em}
+
+  #overiew .img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 5%;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column;
+  }
+.gang{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#overiew img {
+  background: #fafafa;
+  padding: 5px;
+  border: 2px solid silver;
+  float: left;
+  width: 100%;
+  max-width: 200px;
+}
+
+#overiew span {
+  float: left;
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 10px;
+  }
+
+#contacts {
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  border-top: 4px solid #ccc;
+  background: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+#contacts h5 {font-size: 3em; color: #4f4f4f}
+
+#form_input {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+
+@media (min-width: 1051px) {
+  #form_input {
+    width: 35%;
+    margin-left: 38%;
+  }
+}
+
+@media (max-width: 1050px) {
+  #form_input {
+    width: 90%;
+    margin-left: 10%;
+  }
+}
+
+#form_input label {
+  color: #505050;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-family: 'Roboto Slab', serif;
+}
+
+#form_input label > span {
+  color: #e87e7e;
+}
+
+#form_input input,#form_input textarea {
+  margin-bottom: 10px;
+  width: 70%;
+  padding: 10px 2%;
+  border-radius: 7px;
+  border: 2px solid silver;
+  font-size: 0.9em;
+  color: #4a4a4a;
+}
+
+#form_input input:focus, #form_input textarea:focus {
+border-color: #333;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4F4F4F;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 280px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#footer-site {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #343434;
+  text-align: center;
+  color: #fff;
+}
+
+#footer-site a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.widget-social li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.widget-social li a:hover {
+  color: #3f8ae0 !important;
+}
